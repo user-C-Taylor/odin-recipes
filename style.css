@@ -65,9 +65,9 @@ h1 {
 /* Anchors are in-line so you can pad left and right but not top and 
    bottom. To add height, you can add a border or include a child div 
    with padding. 
-   Alternatively set display to inline-block to add vertical padding 
-   and borders to anchors that are respected by neighboring elements / 
-   the container. */
+   Alternatively set "display" to "inline-block" to add vertical 
+   padding and borders to anchors that are respected by neighboring 
+   elements / the container. */
 .cool-link {
     color: #000000;
     background-color: #FFFFFF;
