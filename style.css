@@ -135,7 +135,9 @@ h1 {
 }
 
 /* .recipe-whole can't have width set without removing the effect of
-   justify-content. So child div must be used to set width. */
+   justify-content (.recipe-whole is then limited to width length from 
+   the left edge of the parent container of .recipe-whole). So child 
+   div (centered by .recipe-whole) must be used to set width. */
 .narrow {
     max-width: 600px;
 }
