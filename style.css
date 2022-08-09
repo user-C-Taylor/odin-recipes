@@ -95,8 +95,8 @@ h1 {
 }
 
 
-/* Display set to block allows centering with margins as used in this 
-   comment. 
+/* "display" set to "block" allows centering with margins as used in 
+   this comment. 
    Note sizing child elements smaller will align the child elements
    left along the parent's left edge. 
    Note width must be set and not to 100%. 
@@ -104,7 +104,7 @@ h1 {
     margin-left: auto;
     margin-right: auto; 
     width: 500px;*/
-/* Display set to flex to use justify-content to center the child 
+/* "display" set to "flex" to use justify-content to center the child 
    div (that child of .recipe-figure). This allows the child img 
    width to be adjusted without setting the child off-center (as 
    would be the case with margins left and right set to auto due 
@@ -122,26 +122,25 @@ h1 {
     height: auto;
 }
 
+/* Display flex was selected instead of selecting block with auto left 
+   and right margins and a width. Setting these in an ancestor element 
+   allows aligning grandchild h2 along left edge of .narrow container.*/
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px; 
+    */
 .recipe-whole {
     display: flex;
     justify-content: center;
 }
 
 /* .recipe-whole can't have width set without removing the effect of
-   "justify-content". So child div must be used to set width. */
+   justify-content. So child div must be used to set width. */
 .narrow {
     max-width: 600px;
 }
 
-/* Display flex was selected instead of selecting block with auto left 
-   and right margins and a width. Display flex allows left aligning 
-   grandchild h2 along the left container edge with narrow recipe 
-   content--instead of centering h2. */
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px; 
-    */
 .recipe-section {
     padding: 0 0 25px 0;
     font-size: 18px;
