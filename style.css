@@ -63,8 +63,7 @@ h1 {
 }
 
 /* Anchors are in-line so you can pad left and right but not top and 
-   bottom. To add height, you can add a border or include a child div 
-   with padding. 
+   bottom. To add height, you can add a border.
    Alternatively set "display" to "inline-block" to add vertical 
    padding and borders to anchors that are respected by neighboring 
    elements / the container. */
