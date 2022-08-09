@@ -3,9 +3,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Auto margin won't center because header element width is 100%. See 
-   the below comment preceding the grouped .recipe-figure, and 
-   .back-link. */
 /* Grouped selectors. */
 h1, h2 {
     font-weight: 300;
@@ -13,6 +10,9 @@ h1, h2 {
     letter-spacing: 0.08em;
 }
 
+/* Auto margin won't center because header element width is 100%. See 
+   the below comment preceding the grouped .recipe-figure, and 
+   .back-link. */
 h1 {
     text-align: center;
 }
@@ -64,7 +64,10 @@ h1 {
 
 /* Anchors are in-line so you can pad left and right but not top and 
    bottom. To add height, you can add a border or include a child div 
-   with padding. */
+   with padding. 
+   Alternatively set display to inline-block to add vertical padding 
+   and borders to anchors that are respected by neighboring elements / 
+   the container. */
 .cool-link {
     color: #000000;
     background-color: #FFFFFF;
@@ -131,8 +134,9 @@ h1 {
 }
 
 /* Display flex was selected instead of selecting block with auto left 
-   and right margins and a width. Display flex allows left aligning h2 
-   in line with narrow recipe content--instead of centering h2. */
+   and right margins and a width. Display flex allows left aligning 
+   grandchild h2 along the left container edge with narrow recipe 
+   content--instead of centering h2. */
     /* display: block;
     margin-left: auto;
     margin-right: auto;
